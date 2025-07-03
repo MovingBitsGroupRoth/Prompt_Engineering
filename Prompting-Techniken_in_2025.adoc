@@ -10,114 +10,114 @@ Das Prompt Engineering hat sich 2025 stark weiterentwickelt. Neben klassischen M
 == Standard- und Fortgeschrittene Prompting-Techniken
 
 === Zero-Shot Prompting
-  - Klare, direkte Anweisung ohne Beispiele.
-  - Ideal für einfache oder bekannte Aufgaben.
+- Klare, direkte Anweisung ohne Beispiele.
+- Ideal für einfache oder bekannte Aufgaben.
 
 === Few-Shot Prompting
-  - 2–5 Beispiele als Kontext im Prompt.
-  - Verbessert Formatkonsistenz und domänenspezifische Aufgaben.
+- 2–5 Beispiele als Kontext im Prompt.
+- Verbessert Formatkonsistenz und domänenspezifische Aufgaben.
 
 === Chain-of-Thought (CoT) Prompting
-  - Explizite Aufforderung zum schrittweisen Denken („Denke Schritt für Schritt“).
-  - Besonders effektiv bei komplexen, logischen Aufgaben.
+- Explizite Aufforderung zum schrittweisen Denken („Denke Schritt für Schritt“).
+- Besonders effektiv bei komplexen, logischen Aufgaben.
 
 === Self-Consistency Prompting
-  - Mehrere Reasoning-Pfade generieren lassen, dann den konsistentesten Output wählen.
-  - Reduziert Fehler bei komplexen Aufgaben.
+- Mehrere Reasoning-Pfade generieren lassen, dann den konsistentesten Output wählen.
+- Reduziert Fehler bei komplexen Aufgaben.
 
 === Tree-of-Thought (ToT) Prompting
-  - Das Modell exploriert verschiedene Lösungswege als Baumstruktur und wählt den besten Pfad aus.
+- Das Modell exploriert verschiedene Lösungswege als Baumstruktur und wählt den besten Pfad aus.
 
 === Prompt Chaining
-  - Mehrere Prompts werden sequentiell verbunden, um komplexe Aufgaben in Teilschritte zu zerlegen.
+- Mehrere Prompts werden sequentiell verbunden, um komplexe Aufgaben in Teilschritte zu zerlegen.
 
 === Meta Prompting
-  - Der Prompt gibt nur die Struktur oder das Vorgehen vor, nicht die konkreten Inhalte.
-  - Fördert Generalisierung und logische Konsistenz.
+- Der Prompt gibt nur die Struktur oder das Vorgehen vor, nicht die konkreten Inhalte.
+- Fördert Generalisierung und logische Konsistenz.
 
 === Retrieval-Augmented Generation (RAG)
-  - Externe Wissensquellen werden eingebunden, um die Antwort zu verbessern.
+- Externe Wissensquellen werden eingebunden, um die Antwort zu verbessern.
 
 === ReAct (Reasoning + Acting)
-  - Das Modell kombiniert logisches Denken mit Aktionen (z.B. Tool-Nutzung).
+- Das Modell kombiniert logisches Denken mit Aktionen (z.B. Tool-Nutzung).
 
 === Automatic Reasoning and Tool-use (ART)
-  - Das Modell entscheidet selbstständig, welche Tools oder Datenquellen genutzt werden sollen.
+- Das Modell entscheidet selbstständig, welche Tools oder Datenquellen genutzt werden sollen.
 
 === Persona-/Role-Prompting
-  - Das Modell erhält eine explizite Rolle („Du bist ein Senior Developer...“), um Stil und Fachlichkeit zu steuern.
+- Das Modell erhält eine explizite Rolle („Du bist ein Senior Developer...“), um Stil und Fachlichkeit zu steuern.
 
 === Structured Output Specification
-  - Das gewünschte Ausgabeformat (z.B. JSON, Tabelle) wird explizit vorgegeben.
+- Das gewünschte Ausgabeformat (z.B. JSON, Tabelle) wird explizit vorgegeben.
 
 === Self-Correction/Reflection Prompts
-  - Das Modell wird aufgefordert, die eigene Antwort zu überprüfen und zu verbessern („Überarbeite deine Antwort auf Fehler.“).
+- Das Modell wird aufgefordert, die eigene Antwort zu überprüfen und zu verbessern („Überarbeite deine Antwort auf Fehler.“).
 
 === Data-Driven Prompting
-  - Relevante Daten oder Fakten werden direkt im Prompt mitgegeben, um die Genauigkeit zu erhöhen.
+- Relevante Daten oder Fakten werden direkt im Prompt mitgegeben, um die Genauigkeit zu erhöhen.
 
 === Recursive Self-Improvement Prompting (RSIP)
-  - Das Modell erstellt einen Entwurf, bewertet Schwächen und verbessert sich iterativ selbst.
+- Das Modell erstellt einen Entwurf, bewertet Schwächen und verbessert sich iterativ selbst.
 
 === Context-Aware Decomposition (CAD)
-  - Komplexe Aufgaben werden kontextbewusst in Teilprobleme zerlegt.
+- Komplexe Aufgaben werden kontextbewusst in Teilprobleme zerlegt.
 
 === Multimodal Prompting
-  - Kombination aus Text, Bildern und anderen Medien im Prompt.
+- Kombination aus Text, Bildern und anderen Medien im Prompt.
 
 == Ausgefallene und experimentelle Techniken
 
 === Prompt Ensembling
-  - Mehrere verschiedene Prompts werden parallel genutzt, die Ergebnisse aggregiert.
+- Mehrere verschiedene Prompts werden parallel genutzt, die Ergebnisse durch Aggregation (z. B. Mehrheitsentscheid oder gewichtete Kombination) zusammengeführt.
 
 === Adversarial Prompting
-  - Das Modell wird gezielt mit schwierigen oder irreführenden Prompts getestet, um Schwachstellen zu identifizieren.
+- Das Modell wird gezielt mit schwierigen oder irreführenden Prompts getestet, um Schwachstellen zu identifizieren.
 
 === Prompt Injection/Editing
-  - Prompts werden dynamisch zur Laufzeit angepasst, z.B. durch User-Feedback oder externe Events.
+- Prompts werden dynamisch zur Laufzeit angepasst, z.B. durch User-Feedback oder externe Events.
 
 === Self-Prompting
-  - Das Modell generiert selbst die für die Aufgabe optimalen Prompts („Prompt-Reflexion“).
+- Das Modell generiert intern optimierte Prompts oder Reasoning-Schritte, um die Aufgabe effizienter zu lösen („Prompt-Reflexion“).
 
 === Prompt Memory
-  - Das Modell nutzt vergangene Prompts und Antworten als Kontext für aktuelle Aufgaben.
+- Das Modell nutzt vergangene Prompts und Antworten als Kontext für aktuelle Aufgaben.
 
-== Besonderheiten für Reasoning-Modelle (z.B. OpenAI o1/o3, Claude 4)
+== Besonderheiten für Reasoning-Modelle (z.B. OpenAI o1, Grok 3)
 
 Reasoning-Modelle verhalten sich beim Prompting anders als klassische LLMs. Die wichtigsten Unterschiede und Empfehlungen:
 
 === Prompts müssen besonders klar, präzise und direkt sein
-  - Vage oder zu komplexe Prompts führen zu schlechteren Ergebnissen.
+- Vage oder zu komplexe Prompts führen zu schlechteren Ergebnissen.
 
-=== Chain-of-Thought Prompting ist meist unnötig oder sogar kontraproduktiv
-  - Reasoning-Modelle führen intern bereits logische Analysen aus. Explizite CoT-Aufforderungen können die Leistung verschlechtern.
+=== Chain-of-Thought Prompting ist oft weniger effektiv
+- Reasoning-Modelle führen intern bereits logische Analysen aus. Explizite CoT-Aufforderungen können redundanter sein, sind aber in manchen Fällen (z. B. bei Debugging oder transparentem Reasoning) hilfreich.
 
 === Kurze, explizite Aufgabenstellungen bevorzugen
-  - Lange, verschachtelte Prompts vermeiden. Beispiel:
+- Lange, verschachtelte Prompts vermeiden. Beispiel:
 ----
 GUT: "Fasse die drei wichtigsten Erkenntnisse des Artikels zusammen."
 SCHLECHT: "Bitte analysiere den Artikel Schritt für Schritt und fasse dann alles in einer logisch kohärenten Struktur zusammen."
 ----
 
 === Kontext gezielt und knapp mitgeben
-  - Nur relevante Informationen bereitstellen, um Überforderung zu vermeiden.
+- Nur relevante Informationen bereitstellen, um Überforderung zu vermeiden.
 
 === Strukturierte Output-Vorgaben funktionieren sehr gut
-  - JSON, Tabellen oder Bullet-Points explizit verlangen.
+- JSON, Tabellen oder Bullet-Points explizit verlangen.
 
 === Feedback- und Selbstverbesserungs-Prompts sind weiterhin sinnvoll
-  - Das Modell kann eigene Ausgaben reflektieren und verbessern.
+- Das Modell kann eigene Ausgaben reflektieren und verbessern.
 
 === Self-Prompting und interne Reasoning-Chains
-  - Moderne Modelle generieren intern eigene „Prompts“ und Reasoning-Schritte, bevor sie antworten. Der Nutzer muss daher weniger explizit vorgeben, wie gedacht werden soll.
+- Moderne Modelle generieren intern eigene „Prompts“ und Reasoning-Schritte, bevor sie antworten. Der Nutzer muss daher weniger explizit vorgeben, wie gedacht werden soll.
 
-==  Vergleich Prompting klassischer LLMs vs. Reasoning-Modelle
+== Vergleich Prompting klassischer LLMs vs. Reasoning-Modelle
 
 [cols="1,1,1", options="header"]
 |===
 | Technik/Empfehlung             | Klassische LLMs        | Reasoning-Modelle
 
-| Chain-of-Thought (CoT)         | Sehr hilfreich         | Meist unnötig/schädlich
+| Chain-of-Thought (CoT)         | Sehr hilfreich         | Oft weniger effektiv, aber nützlich für Transparenz
 | Prompt-Länge                   | Variabel               | So kurz/präzise wie möglich
 | Strukturierte Ausgaben         | Hilfreich              | Sehr empfehlenswert
 | Feedback/Reflexion             | Optional               | Sehr effektiv
@@ -125,11 +125,106 @@ SCHLECHT: "Bitte analysiere den Artikel Schritt für Schritt und fasse dann alle
 | Self-Prompting                 | Kaum                   | Modell-intern Standard
 |===
 
+== Praktische Beispiele für Prompting-Techniken
+
+Um die Anwendung der beschriebenen Techniken zu veranschaulichen, folgen konkrete Beispiele für ausgewählte Methoden.
+
+=== Beispiel: Few-Shot Prompting
+Aufgabe: Generiere eine E-Mail im professionellen Ton.
+Prompt:
+----
+Schreibe eine professionelle E-Mail. Hier sind zwei Beispiele:
+
+**Beispiel 1:**
+Betreff: Einladung zum Projektmeeting
+Sehr geehrte Frau Müller,
+ich lade Sie herzlich zum Projektmeeting am 10. Juli 2025 um 10 Uhr ein. Bitte bestätigen Sie Ihre Teilnahme.
+Mit freundlichen Grüßen,
+Max Mustermann
+
+**Beispiel 2:**
+Betreff: Rückfragen zum Angebot
+Sehr geehrter Herr Schmidt,
+vielen Dank für Ihr Angebot vom 5. Juli. Könnten Sie bitte die Fristen für die Lieferung präzisieren?
+Beste Grüße,
+Anna Beispiel
+
+**Aufgabe:** Schreibe eine E-Mail, um einen Termin für ein Beratungsgespräch zu vereinbaren.
+----
+
+=== Beispiel: Structured Output Specification
+Aufgabe: Extrahiere die wichtigsten Punkte aus einem Text und gib sie als JSON aus.
+Prompt:
+----
+Lies den folgenden Text und extrahiere die drei wichtigsten Punkte. Gib die Ergebnisse im JSON-Format aus:
+{
+  "key_points": [
+    "Punkt 1",
+    "Punkt 2",
+    "Punkt 3"
+  ]
+}
+Text: [Hier Text einfügen]
+----
+
+=== Beispiel: Tree-of-Thought (ToT) Prompting
+Aufgabe: Löse ein mathematisches Problem mit mehreren Ansätzen.
+Prompt:
+----
+Berechne die Fläche eines Dreiecks mit den Seitenlängen 3, 4 und 5. Erkunde mindestens zwei verschiedene Ansätze (z. B. Herons Formel und rechtwinkliges Dreieck) und wähle den besten aus. Erkläre jeden Schritt.
+----
+
+=== Beispiel: Self-Correction Prompting
+Aufgabe: Verbessere eine generierte Antwort.
+Prompt:
+----
+Schreibe einen kurzen Text über die Vorteile von Solarenergie. Überprüfe anschließend deine Antwort auf Fehler oder Unklarheiten und verbessere sie. Gib die überarbeitete Version aus.
+----
+
+== Ethische Überlegungen beim Prompt Engineering
+
+Prompt Engineering birgt auch ethische Herausforderungen. Folgende Aspekte sollten beachtet werden:
+
+- **Vermeidung von Bias**: Prompts sollten so formuliert werden, dass sie keine voreingenommenen oder diskriminierenden Antworten fördern. Beispiel: Statt „Beschreibe einen typischen Softwareentwickler“ lieber „Beschreibe die Aufgaben eines Softwareentwicklers“.
+- **Sicherheit vor Prompt Injection**: Bei der Nutzung in APIs oder interaktiven Systemen sollten Prompts so gestaltet sein, dass sie nicht durch bösartige Eingaben manipuliert werden können (z. B. durch klare Eingabevalidierung).
+- **Transparenz**: Nutzer sollten klar kommunizieren, wenn Antworten für sensible Anwendungen (z. B. Medizin, Recht) genutzt werden, um die Verantwortung des Modells zu definieren.
+
+== Häufige Fehler und deren Vermeidung
+
+Beim Prompt Engineering können Fehler die Qualität der Antworten beeinträchtigen. Häufige Fehler und Lösungen:
+
+- **Zu vage Prompts**: Unklare Anweisungen führen zu ungenauen Antworten. Lösung: Präzise, spezifische Formulierungen verwenden.
+- **Überladung mit Kontext**: Zu viele Informationen verwirren das Modell. Lösung: Nur relevante Details angeben.
+- **Fehlende Strukturvorgaben**: Ohne klare Formatvorgaben kann die Ausgabe inkonsistent sein. Lösung: Explizite Ausgabeformate wie JSON oder Tabellen verlangen.
+- **Ignorieren der Modellfähigkeiten**: Reasoning-Modelle benötigen weniger explizite Anweisungen für logische Schritte. Lösung: Auf interne Logik vertrauen und CoT nur bei Bedarf einsetzen.
+
+== Visualisierung der Prompting-Techniken
+
+Das folgende Diagramm kategorisiert die Prompting-Techniken nach Komplexität und Typ:
+
+[mermaid]
+----
+graph TD
+    A[Prompting-Techniken] --> B[Standard]
+    A --> C[Fortgeschritten]
+    A --> D[Experimentell]
+    B --> B1[Zero-Shot]
+    B --> B2[Few-Shot]
+    C --> C1[Chain-of-Thought]
+    C --> C2[Tree-of-Thought]
+    C --> C3[Prompt Chaining]
+    C --> C4[RAG]
+    D --> D1[Prompt Ensembling]
+    D --> D2[Self-Prompting]
+    D --> D3[Adversarial Prompting]
+----
+
 == Best Practices für 2025
 
 * Klare, explizite Anweisungen
 * Relevanten Kontext bereitstellen, Überladung vermeiden
 * Strukturierte Output-Vorgaben nutzen
 * Feedback- und Selbstverbesserungs-Loops einbauen
-* Bei Reasoning-Modellen: Keine expliziten CoT-Prompts, sondern auf interne Logik vertrauen
+* Bei Reasoning-Modellen: Keine überflüssigen CoT-Prompts, sondern auf interne Logik vertrauen
 * Kombination mehrerer Techniken je nach Aufgabe ausprobieren
+* Ethische Aspekte beachten, insbesondere bei sensiblen Anwendungen
